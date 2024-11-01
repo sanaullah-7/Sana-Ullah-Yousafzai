@@ -2,4 +2,4 @@
 Hey! How are you.
 <br>
 This is my first GitHub
-Author-Zohri
+Author-ZoHRi
