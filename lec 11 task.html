@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- multipliction -->
+    <input  id="btn1"  placeholder="Enter any number" type="number" name="">
+    <input  id="btn2"  placeholder="Enter any number" type="number" name="">
+    <button onclick="Addnumber()">Multiply</button>
+    <h1 id="result1">Result<h1>
+
+        <!-- Addition -->
+    <input id="num1" placeholder="enter the number" type="number" name="">
+    <input id="num2" placeholder="enter the number" type="number" name="">
+    <button onclick="Addnumbe()">Add</button>
+    <h1 id="result"></h1>
+   
+    <script>
+        function Addnumber()
+        {
+            let num1 = parseInt(document.getElementById("btn1").value)
+            let num2 = parseFloat(document.getElementById("btn2").value)
+            multiply = num1 * num2;
+            document.getElementById("result1").innerHTML = multiply;
+        }
+
+        
+            function Addnumbe()
+    {
+        let num1 = parseInt(document.getElementById("num1").value)
+        let num2 = parseFloat(document.getElementById("num2").value)
+        sum = num1 + num2;
+        document.getElementById("result").innerHTML = "result = "+sum;
+        }
+        
+    </script>
+   
+</body>
+</html>

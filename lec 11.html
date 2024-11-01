@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            color: blue;
+        }
+    </style>
+</head>
+<script>
+    function Hello()
+    {
+        alert ("Hi")
+        // document.write("Hi")
+    }
+    function Addnumber()
+    {
+        let num1 = parseInt(document.getElementById("num1").value)
+        let num2 = parseFloat(document.getElementById("num2").value)
+        sum = num1 + num2;
+        document.getElementById("result").innerHTML = "result "+sum;
+        }
+        // let div = document.querySelector("div")
+        // div.onmouseover = (e) => 
+        // {
+        //        document.write(e)
+        // };
+</script>
+<body ><!--onscroll="Hello()"--> 
+    <h1>Events</h1><!--Event usually give us a signal that something happend. OR The change in the state of an object is known as Event-->
+    <!--this is in line events-->
+    <button onclick="document.write('Hey i am Malak SanaUllah-Yousafxai');alert('My Name')">Magic button</button>
+    <br><br>
+    <button onclick="Hello()">one click me</button>
+    <br><br>
+    <button ondblclick="Hello()">double click me </button>
+    <br><br>
+    <button oncontextmenu="Hello()"> on right click</button>
+    <br><br>
+    <button onkeyup="Hello()"> on key up </button>
+    <br><br>
+    <button onkeydown="Hello()"> on key down</button>
+    <br><br>
+    <button onmouseenter="Hello()">On mouse enter</button>
+    <br><br>
+    <button onmouseout="Hello()">On mouse out</button>
+    <br><br>
+    <button onmousedown="Hello()">On right enter</button>
+    <br><br>
+    <button onmouseup="Hello()">On right remove</button>
+    <br><br>
+    <button onkeypress="Hello()">On key Press</button>
+    <br><br>
+
+    <div id="div" onmouseover="document.write('This is  onmouseover');Hello()">Dont Touce Me</div>
+   
+    <h1>Simple Addition</h1>
+    <input id="num1" placeholder="enter the number" type="number" name="">
+    <input id="num2" placeholder="enter the number" type="number" name="">
+    <button onclick="Addnumber()">Add</button>
+    <h1 id="result"></h1>
+</body>
+</html>
